@@ -18,17 +18,17 @@
   color: #4f9cf9;
 }
 
-.navbar ul {
+.nav-links {
   display: flex;
   list-style: none;
   gap: 35px;
 }
 
-.navbar ul li a {
+.nav-links li a {
   transition: 0.3s;
 }
 
-.navbar ul li a:hover {
+.nav-links li a:hover {
   color: #4f9cf9;
 }
 
@@ -45,4 +45,56 @@
 .icons a:hover {
   color: #4f9cf9;
   transform: translateY(-3px);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mobile-icons {
+  display: none;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+  .icons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #09090b;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0;
+    transform: translateY(-150%);
+    transition: 0.4s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .mobile-icons {
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .mobile-icons a:hover {
+    color: #4f9cf9;
+  }
 }
