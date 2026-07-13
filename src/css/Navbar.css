@@ -1,0 +1,48 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #09090bdd;
+  backdrop-filter: blur(12px);
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.navbar h2 {
+  font-size: 28px;
+  color: #4f9cf9;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar ul li a {
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #4f9cf9;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.icons a {
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: #4f9cf9;
+  transform: translateY(-3px);
+}

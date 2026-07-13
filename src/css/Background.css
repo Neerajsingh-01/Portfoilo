@@ -1,0 +1,50 @@
+.blob{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.25;
+    z-index:-1;
+    animation:floatBlob 18s ease-in-out infinite;
+}
+
+.blob1{
+    width:350px;
+    height:350px;
+    background:#3B82F6;
+    top:-100px;
+    left:-100px;
+}
+
+.blob2{
+    width:280px;
+    height:280px;
+    background:#8B5CF6;
+    right:-80px;
+    top:40%;
+    animation-delay:4s;
+}
+
+.blob3{
+    width:220px;
+    height:220px;
+    background:#06B6D4;
+    bottom:-60px;
+    left:40%;
+    animation-delay:8s;
+}
+
+@keyframes floatBlob{
+
+0%,100%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(40px,-40px);
+
+}
+
+}
